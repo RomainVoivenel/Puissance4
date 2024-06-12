@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "."
+        ".",
+        "src"
     ],
     "java.project.referencedLibraries": [
         "/usr/share/openjfx/lib/javafx.base.jar",
