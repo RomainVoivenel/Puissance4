@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <BorderPane prefHeight="71.0" prefWidth="888.0" BorderPane.alignment="CENTER">
+         <left>
+            <Label prefHeight="74.0" prefWidth="273.0" text="Puissance 4" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+         </left>
+         <right>
+            <ButtonBar prefHeight="71.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button fx:id="info" mnemonicParsing="false" text="Info">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Pendu_JavaFX/img/info.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                <Button fx:id="settings" mnemonicParsing="false" text="Settings">
+                     <graphic>
+                        <ImageView fitHeight="84.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Pendu_JavaFX/img/parametres.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                <Button fx:id="home" cancelButton="true" mnemonicParsing="false" text="Home">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Pendu_JavaFX/img/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+              </buttons>
+            </ButtonBar>
+         </right>
+      </BorderPane>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="91.0" prefWidth="888.0" text="Jouer">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ButtonBar prefHeight="100.0" prefWidth="313.0">
+                    <buttons>
+                      <Button fx:id="joueurs" mnemonicParsing="false" text="2 Joueurs" />
+                    </buttons>
+                  </ButtonBar>
+                  <ButtonBar prefHeight="100.0" prefWidth="379.0">
+                    <buttons>
+                        <Button fx:id="vsia" mnemonicParsing="false" text="VS IA" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </HBox>
+            <Line endX="784.2929077148438" endY="-2.243469715118408" startX="1338.5858154296875" startY="-2.2434988021850586" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
